@@ -35,7 +35,7 @@ def total_male_employees(employees: List[Dict])->int:
     for employee in employees:
         if not isinstance(employee, dict):
             continue
-        name = employee.get("ename")
+
         gender = employee.get("gender")
         
         if isinstance(gender, str):
@@ -54,26 +54,27 @@ def main()->None:
 if __name__=="__main__":
     main()
 
-# Poutput: 10
+# Total male employees: 10
 
 '''
 # Key Points (Solution)
 - Loads employee records from a JSON file.
-- Ensures the loaded data is a list of dictionaries.
+- Confirms the data structure is a list of dictionaries.
 - Iterates through employees using a for loop.
-- Safely reads the "gender" field using dict.get().
-- Converts gender to lowercase for case-insensitive comparison.
-- Counts entries where gender == "male".
-- Ignores invalid or malformed employee records.
+- Safely accesses the "gender" field via dict.get().
+- Performs case-insensitive comparison for "male".
+- Counts only valid male employee entries.
+- Ignores malformed or non-dictionary records.
 - Returns the total count as an integer.
 
 # Key Points (Output)
-- Output is a single integer value.
+- Output is a single integer.
 - Represents the total number of male employees.
-- Correctly reflects filtered data from the JSON file.
+- Derived from filtering the JSON dataset.
 - Example output: 10
 
 # Important Note
-- Case-insensitive checks improve data robustness.
-- Returning a count makes the function reusable in other logic.
+- Case-insensitive checks make the logic robust.
+- Returning a value allows reuse in reports or analytics.
 '''
+
