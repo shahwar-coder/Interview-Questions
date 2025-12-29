@@ -70,3 +70,23 @@ if __name__=="__main__":
 # Aishwarya Rai
 # Vijay
 # Madhuri Dixit
+
+'''
+# Key Points (Solution)
+- Loads employee data from a JSON file using json.load().
+- Validates that the loaded data is a list.
+- Uses a for loop to iterate through employee records.
+- Safely accesses employee names using dict.get("ename").
+- Skips invalid entries and handles missing names gracefully.
+- Separates file loading, processing, and execution logic.
+
+# Key Points (Output)
+- Prints one employee name per line.
+- Order follows the sequence in the JSON file.
+- Prints '---' when a name key is missing.
+- Example output includes: Shah Rukh Khan, Deepika Padukone, etc.
+
+# Important Note
+- Proper error handling covers missing files and invalid JSON.
+- Using a for loop is ideal for sequential data processing.
+'''
