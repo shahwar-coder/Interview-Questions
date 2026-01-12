@@ -8,8 +8,9 @@ def view_orders(user, is_logged_in):
 Task:
 Create a decorator login_required that allows this function to run only if is_logged_in=True. Otherwise, return "Please login to continue".    
 '''
-
+from functools import wraps
 def login_required(func):
+    @wraps(func)
     def wrapper(user, is_logged_in):
         if is_logged_in:
             return func(user, is_logged_in)
