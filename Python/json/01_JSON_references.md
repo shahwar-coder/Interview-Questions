@@ -1,0 +1,1 @@
+[https://github.com/shahwar-coder/Programming-Basics/blob/boolean/Icing_Specifics/Module/07_JSON_mental_model.py](https://github.com/shahwar-coder/Programming-Basics/blob/main/Icing_Specifics/Module/07_JSON_mental_model.py)
